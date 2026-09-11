@@ -2,9 +2,7 @@
 <html>
 <head>
     <title>HIKMA</title>
-
     <style>
-
         body {
             background-color: #E8F0EC;
             color: #20352D;
@@ -13,7 +11,6 @@
             margin: 60px auto;
             padding: 20px;
         }
-
         h1 {
             font-size: 45px;
             letter-spacing: 12px;
@@ -21,10 +18,9 @@
             text-align: left;
             margin: 0;
             position: absolute;
-            top:20px;
+            top: 20px;
             left: 30px;
         }
-
         h2 {
             font-weight: normal;
             font-size: 16px;
@@ -34,33 +30,36 @@
             right: 30px;
             text-align: right;
         }
-
         p {
             font-size: 12px;
             line-height: 1.7;
         }
-
         a {
             color: #20352D;
             text-decoration: none;
         }
-
         a:hover {
             text-decoration: underline;
         }
-
         summary {
             cursor: pointer;
             font-size: 18px;
             margin-top: 0;
-            list-style: none
-        
+            list-style: none;
+            display: inline-block;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #20352D;
         }
-        summary: :marker {
+        summary::-webkit-details-marker {
+            display: none;
+        }
+        summary::marker {
             display: none;
             content: "";
-        }    
-
+        }
+        summary:hover {
+            border-bottom-color: transparent;
+        }
         li {
             margin: 12px 0;
         }
@@ -73,32 +72,37 @@
             margin-top: 100px;
             padding-left: 0;
             font-weight: bold;
-         }
+        }
         .intro {
             text-align: left;
             position: absolute;
-            top:50px;
+            top: 50px;
             left: 30px;
             font-size: 6px; 
             margin: 4px 0;
         }
-
+        .dedication {
+            text-align: center;
+            font-size: 13px;
+            line-height: 2;
+            font-weight: normal;
+            margin: 120px auto 40px auto;
+            max-width: 600px;
+        }
     </style>
 </head>
 <body>
     
-<h2><a href= "purchase-my-words.html">Purchase My Words</a></h2>
+<h2><a href="purchase-my-words.html">Purchase My Words</a></h2>
     
 <h1>HIKMA</h1>
-<div class= "intro">
+<div class="intro">
     <p>I love words. I write poems, stories and worlds.</p>
 </div>
     
 <nav>
 <details class="book">
-
 <summary>Chaos, my new order</summary>
-
 <ul>
 <li><a href="creation.html">Creation</a></li>
 <li><a href="truth-love-n-psychology.html">Truth Love and Psychology</a></li>
@@ -122,10 +126,8 @@
 <li><a href="fools.html">Fools</a></li>
 <li><a href="brilliant-heart.html">Brilliant Heart</a></li>
 <li><a href="who-am-i.html">Who Am I</a></li>
-
 </ul>
 </details>
-
 <details class="book">
 <summary>Shadow Cartography</summary>
 <ul>
@@ -140,10 +142,8 @@
 <li><a href="someone-new.html">Someone New</a></li>
 </ul>
 </details>
-
 <details class="book">
 <summary>A Catalogue of Slippery Worlds</summary>
-
 <ul>
 <li><a href="shortstory-one.html">Short Story One</a></li>
 <li><a href="shortstory-two.html">Short Story two</a></li>
@@ -151,9 +151,7 @@
 <li><a href="shortstory-four.html">Short Story Four</a></li>
 </ul>
 </details>
-
 <details class="book">
-
 <summary>Kathena Unleashed</summary>
 <ul>
 <li><a href="prologue.html">Prologue</a></li>
@@ -161,5 +159,15 @@
 <li><a href="chapter-one.html">Chapter One</a></li>
 </ul>
 </details>
-    </nav>
+</nav>
+<div class="dedication">
+    to the humans<br>
+    who make enormous leaps<br>
+    in their consciousness<br>
+    in hopes to make the world more truthful and loving<br>
+    heights where no one sees your diligence<br>
+    these poems are dedicated to you<br>
+    with much peace and love.
+</div>
 </body>
+</html>
