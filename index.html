@@ -2,19 +2,24 @@
 <html>
 <head>
     <title>HIKMA</title>
+    <!-- Bodoni Moda for HIKMA -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #E8F0EC;
             color: #20352D;
-            font-family: Georgia, serif;
+            font-family: "Courier New", Courier, monospace;
             max-width: 1000px;
             margin: 60px auto;
             padding: 20px;
         }
         h1 {
+            font-family: "Bodoni Moda", serif;
             font-size: 45px;
             letter-spacing: 12px;
-            font-weight: normal;
+            font-weight: 400;
             text-align: left;
             margin: 0;
             position: absolute;
@@ -22,6 +27,7 @@
             left: 30px;
         }
         h2 {
+            font-family: "Courier New", Courier, monospace;
             font-weight: normal;
             font-size: 16px;
             margin: 0;
@@ -31,6 +37,7 @@
             text-align: right;
         }
         p {
+            font-family: "Courier New", Courier, monospace;
             font-size: 12px;
             line-height: 1.7;
         }
@@ -41,14 +48,34 @@
         a:hover {
             text-decoration: underline;
         }
+        /* BOOK / ARCHIVE SECTIONS */
+        nav {
+            display: block;
+            margin-top: 140px;
+            padding: 0;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: normal;
+        }
+        details.book {
+            width: 100%;
+            border-top: 1px solid #20352D;
+            padding: 22px 0 0 0;
+            margin: 0;
+        }
+        details.book:last-child {
+            border-bottom: 1px solid #20352D;
+            padding-bottom: 22px;
+        }
         summary {
             cursor: pointer;
+            font-family: "Courier New", Courier, monospace;
             font-size: 18px;
-            margin-top: 0;
+            font-weight: normal;
             list-style: none;
-            display: inline-block;
-            padding-bottom: 6px;
-            border-bottom: 1px solid #20352D;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0 22px 0;
         }
         summary::-webkit-details-marker {
             display: none;
@@ -57,32 +84,43 @@
             display: none;
             content: "";
         }
+        /* OPEN / CLOSE MARK */
+        summary::after {
+            content: "+";
+            font-family: "Courier New", Courier, monospace;
+            font-size: 16px;
+            font-weight: normal;
+            opacity: 0.6;
+        }
+        details[open] summary::after {
+            content: "−";
+        }
         summary:hover {
-            border-bottom-color: transparent;
+            opacity: 0.65;
+        }
+        ul {
+            margin: 0 0 30px 0;
+            padding-left: 20px;
+            font-family: "Courier New", Courier, monospace;
+            font-weight: normal;
         }
         li {
             margin: 12px 0;
-        }
-        nav {
-            display: flex;
-            justify-content: left;
-            gap: 15px;
-            flex-wrap: wrap;
-            align-items: flex-start;
-            margin-top: 100px;
-            padding-left: 0;
-            font-weight: bold;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 12px;
         }
         .intro {
             text-align: left;
             position: absolute;
             top: 50px;
             left: 30px;
+            font-family: "Courier New", Courier, monospace;
             font-size: 6px; 
             margin: 4px 0;
         }
         .dedication {
             text-align: center;
+            font-family: "Courier New", Courier, monospace;
             font-size: 13px;
             line-height: 2;
             font-weight: normal;
@@ -137,7 +175,7 @@
 <li><a href="father.html">Father</a></li>
 <li><a href="rejecting-rejection.html">Rejecting rejectiohn</a></li>    
 <li><a href="death.html">Death</a></li>
-<li><a href="grieving-you.html">Greiving You</a></li>
+<li><a href="greiving-you.html">Greiving You</a></li>
 <li><a href="the-landing.html">The Landing</a></li>
 <li><a href="someone-new.html">Someone New</a></li>
 </ul>
@@ -171,3 +209,5 @@
 </div>
 </body>
 </html>
+
+I think Bodoni Moda for HIKMA + Courier New for everything underneath is a really good pairing for what you’re building: the name feels like the author/title, while the rest feels like an archive or field record.
